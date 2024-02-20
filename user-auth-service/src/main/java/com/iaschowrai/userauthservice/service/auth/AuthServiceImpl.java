@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @RequiredArgsConstructor
 public class AuthServiceImpl implements AuthService{
+
     private final AppUserRepo appUserRepo;
     private final PasswordEncoder passwordEncoder;
 
@@ -42,5 +43,6 @@ public class AuthServiceImpl implements AuthService{
         return AuthResponse.builder()
                 .accessToken(accessToken)
                 .build();
+
     }
 }

@@ -18,7 +18,6 @@ import java.time.LocalDateTime;
 @Document(collection = "app_users")
 public class AppUser {
     @Id
-
     private String userId;
     private String name;
     private String email;
